@@ -1,0 +1,164 @@
+#benefits{
+    padding: 10px 60px;
+}
+#benefits .red-strip{
+    margin-left: -60px;
+}
+
+.benefit-list ul li{
+     color: black;
+ }
+ 
+
+ /* for bigger screens */
+@media (min-width:1201px) and (max-width:2560px){
+
+ .carousel-item img{
+    height: 500px;
+}
+#blackstrip{
+     
+     
+    padding: 40px 0px 40px 150px;
+  margin-bottom: 40px;
+ 
+    
+}
+
+#blackstrip h3{
+  font-weight: 500;
+  margin-bottom: 25px;
+ 
+}
+
+#blackstrip span{
+    border: 1px solid #fff1f1;
+    border-radius: 3px;
+    padding: 12px 10px;
+    
+    
+
+
+
+
+}
+
+/* benefits section */
+.red-strip{
+  
+  height: 70px;
+  width: 650px;
+ 
+font-size: 2.6rem;
+ 
+padding: 5px 0 5px 50px;
+margin-bottom: 60px;
+}
+
+.features{
+  flex-direction: row;
+padding:10px 100px 10px 100px;
+}
+
+.benefit-list ul li{
+  font-size: 1.4rem;
+}
+
+.sign-up-form{
+  width: 800px;
+  padding: 40px 40px;
+  margin-left: 70px;
+  margin-top: -60px;
+  
+  
+}
+
+
+/* preview */
+ .preview::before {
+ 
+  background-size: cover;
+   
+}
+
+.preview::before {    
+      content: "";
+      background-image: url('../img/discount\ adda\ bg.png');
+      background-size: cover;
+      position: absolute;
+      /* position: fixed; */
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+      z-index: -1;
+      -webkit-transform: translate3d(0,0,0);
+        background-size: cover;
+  background-position-y: -100px;
+}
+.preview{
+ position: relative;
+   
+   
+  
+}
+
+.preview-img{
+  
+  flex-direction: row;
+   
+  align-items: flex-start;
+  
+ 
+   
+}
+
+.preview h1{
+  
+  margin-bottom: 50px;
+  
+}
+
+.preview-img img{
+  height: auto;
+  width: 90%;
+  
+ margin-bottom: 0;
+}
+ 
+/* Download button */
+
+.download-btn{
+   margin-left: 80px;
+}
+
+ 
+.download-btn h1{
+  
+ text-align: left;
+ margin-bottom: 10px;
+}
+
+ .download-btn button{
+ 
+  width: 400px;
+  margin-right: 10px;
+
+  padding: 10px 30px;
+ 
+   
+}
+
+.download-btn a{
+  display: inline-block;
+}
+
+#our-merchants{
+  margin-bottom: 0 !important;
+}
+.footer{
+  margin-top: -100px;
+}
+ 
+}

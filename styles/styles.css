@@ -1,0 +1,570 @@
+/* add social icons and move to top button */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+     /* overflow-x:hidden ; */
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden ;
+}
+
+
+ 
+.navbar-brand{
+margin-right: 10rem;
+}
+
+.nav-item{
+  margin-right: 20px;
+  font-weight: bold;
+  color: black !important;
+}
+
+
+
+
+/* Before hamburger menu starts appearing */
+
+ 
+.carousel-item img{
+    height: 200px;
+}
+#blackstrip{
+    background-color: #2e3644;
+    color: white;
+    padding: 40px 20px;
+  margin-bottom: 20px;
+ 
+    
+}
+
+#blackstrip h3{
+  font-weight: bold;
+
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+#blackstrip p{
+     line-height: 2em;
+     word-spacing: 5px; 
+     font-size: 1.5rem;
+}
+#blackstrip span{
+    border: 1px solid #fff1f1;
+    border-radius: 3px;
+    padding: 3px 1px;
+    font-weight: 400;
+    
+
+
+
+
+}
+
+
+
+/* benefits */
+
+
+#benefits{
+  
+
+   
+}
+.red-strip{
+  background-color: 
+#d02824;
+  height: 80px;
+  width: 45%;
+
+clip-path: polygon(0 1%, 100% 0, 90% 49%, 100% 100%, 0 100%, 0% 50%);
+
+font-size: 2.8rem;
+color: white;
+padding: 5px 0 5px 50px;
+margin-bottom: 20px;
+}
+
+ 
+.features{
+  display: flex;
+  flex-direction: column;
+  
+}
+.benefit-list ul li {
+  color: red;
+ 
+}
+
+.benefit-list ul li span {
+  color:black;
+  
+}
+ 
+ 
+.sign-up-form{
+  width: 90%;
+   
+ 
+  padding:50px 30px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f4f4;
+border-radius: 10px;
+   
+  /* padding-right: 60px; */
+
+}
+
+
+
+.choice{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.details input{
+  border :1px solid #adaaaa;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.details div{
+  display: flex;
+  justify-content: space-between;
+ margin-bottom: 20px;
+}
+
+
+.sign-up-form button{
+  padding:20px 60px 20px 60px;
+   margin-top: 20px; 
+   width: 100%;
+}
+ 
+
+/* preview */
+ 
+.preview{
+   padding-top: 40px;
+}
+
+.preview h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.preview-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+  margin-bottom: 30px;
+   
+}
+
+.preview-img img{
+  height: 600px;
+  width: 90%;
+  
+  /* object-fit: contain; */
+  /* image-rendering: -moz-crisp-edges; Firefox */
+/* image-rendering: -o-crisp-edges; Opera */
+/* image-rendering: -webkit-optimize-contrast; Webkit (non-standard naming) */
+/* image-rendering: crisp-edges; */
+/* -ms-interpolation-mode: nearest-neighbor; IE (non-standard property) */
+ 
+}
+
+
+.download-btn button{
+  /* padding: 10px 80px; */
+  width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin:10px auto;
+   
+}
+
+.download-btn button span{
+ 
+font-weight: bold;
+}
+
+.download-btn button i{
+ margin-right: 10px;
+}
+
+.download-btn a{
+  text-decoration: none;
+}
+
+
+#our-merchants{
+ /* margin-bottom: -80px; */
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+
+#our-merchants h1{
+  
+ margin-bottom: 30px;
+ font-weight: bold;
+}
+
+ 
+/* footer  */
+
+.footer {
+  
+
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 80px;
+  color: white;
+  flex-wrap: wrap;
+
+
+}
+.address{
+  flex-basis: 100%;
+}
+.footer h5{
+  margin-bottom: 30px;
+}
+.footer i {
+  color: rgb(255, 241, 241);
+  margin-left: 6px;
+   font-size: 12px;
+}
+ 
+.footer a {
+  display: block;
+  font-weight: 300;
+  font-size: 0.9rem;
+  
+color: white;
+  text-decoration: none;
+  margin: 12px 0;
+}
+.footer > * {
+  margin: 15px 15px;
+}
+
+ 
+
+ .address{
+   flex-basis: 100%;
+    margin-left:140px;
+    padding: 20px;
+ }
+ 
+.footer-goal {
+  flex-basis: 20%;
+  flex-grow: 0;
+  /* justify-content: start; */
+  text-justify: inter-word;
+}
+ 
+ 
+
+.footer-goal .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width:576px){
+#blackstrip{
+       text-align: center;
+       padding: 30px 20px;
+       
+        
+}
+
+.red-strip{
+   
+  height: 40px;
+  width: 60%;
+
+clip-path: polygon(0 1%, 100% 0, 90% 49%, 100% 100%, 0 100%, 0% 50%);
+
+
+font-size: 1.3rem;
+color: white;
+padding: 5px 10px;
+}
+
+/* to align preview images */
+ .preview-img div{
+  text-align: center;
+  
+ }
+     /* footer */
+  .footer {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .footer > * {
+    margin: 15px 0;
+  }
+
+  .footer-goal .social-media {
+    justify-content: space-evenly;
+  }
+}
+
+@media  (min-width:577px) and (max-width:768px) {
+
+  .red-strip{
+   
+  height: 40px;
+  width: 40%;
+
+clip-path: polygon(0 1%, 100% 0, 90% 49%, 100% 100%, 0 100%, 0% 50%);
+
+
+font-size: 1.3rem;
+color: white;
+padding: 5px 10px;
+}
+
+.features{
+  flex-direction: row;
+}
+
+  
+}
+ 
+
+@media (min-width:767px) and (max-width:991px){
+.features{
+  flex-direction: row;
+}
+
+
+.red-strip{
+   
+  height: 40px;
+  width: 60%;
+
+clip-path: polygon(0 1%, 100% 0, 90% 49%, 100% 100%, 0 100%, 0% 50%);
+
+
+font-size: 1.3rem;
+color: white;
+padding: 5px 10px;
+}
+
+}
+
+@media (min-width:992px) and  (max-width:1200px) {
+   
+    #blackstrip{
+
+        padding-left: 100px;
+    }
+
+    #blackstrip span{
+    border: 1px solid #fff1f1;
+    border-radius: 3px;
+    padding: 10px 5px;
+    
+}
+
+.carousel-item img{
+    height: 400px;
+}
+
+
+.features{
+  flex-direction: row;
+}
+
+.red-strip{
+  background-color: 
+#d02824;
+  height: 80px;
+  width: 40%;
+
+clip-path: polygon(0 1%, 100% 0, 90% 49%, 100% 100%, 0 100%, 0% 50%);
+
+font-size: 2.8rem;
+color: white;
+padding: 5px 0 5px 50px;
+margin-bottom: 20px;
+}
+
+
+ 
+
+
+}
+
+/* for bigger screens */
+@media (min-width:1201px) and (max-width:2560px){
+
+ .carousel-item img{
+    height: 500px;
+}
+#blackstrip{
+     
+     
+    padding: 40px 0px 40px 150px;
+  margin-bottom: 40px;
+ 
+    
+}
+
+#blackstrip h3{
+  font-weight: 500;
+  margin-bottom: 25px;
+ 
+}
+
+#blackstrip span{
+    border: 1px solid #fff1f1;
+    border-radius: 3px;
+    padding: 12px 10px;
+    
+    
+
+
+
+
+}
+
+/* benefits section */
+.red-strip{
+  
+  height: 70px;
+  width: 540px;
+ 
+font-size: 2.6rem;
+ 
+padding: 5px 0 5px 50px;
+margin-bottom: 60px;
+}
+
+.features{
+  flex-direction: row;
+padding:10px 100px 10px 100px;
+}
+
+.benefit-list ul li{
+  font-size: 1.4rem;
+}
+
+.sign-up-form{
+  width: 800px;
+  padding: 40px 40px;
+  margin-left: 70px;
+  margin-top: -60px;
+  
+  
+}
+
+
+/* preview */
+ .preview::before {
+ 
+  background-size: cover;
+   
+}
+
+.preview::before {    
+      content: "";
+      background-image: url('../img/discount\ adda\ bg.png');
+      background-size: cover;
+      position: absolute;
+      /* position: fixed; */
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+      z-index: -1;
+      
+        
+  background-position-y: -300px;
+}
+.preview{
+ position: relative;
+   
+   
+  
+}
+
+.preview-img{
+  
+  flex-direction: row;
+   
+  align-items: flex-start;
+  
+ 
+   
+}
+
+.preview h1{
+  
+  margin-bottom: 50px;
+  
+}
+
+.preview-img img{
+  height: auto;
+  width: 90%;
+  
+ margin-bottom: 0;
+}
+ 
+/* Download button */
+
+.download-btn{
+   margin-left: 80px;
+}
+
+ 
+.download-btn h1{
+  
+ text-align: left;
+ margin-bottom: 10px;
+}
+
+ .download-btn button{
+ 
+  width: 400px;
+  margin-right: 10px;
+
+  padding: 10px 30px;
+ 
+   
+}
+
+.download-btn a{
+  display: inline-block;
+}
+
+#our-merchants{
+  margin-bottom: 0 !important;
+}
+.footer{
+  margin-top: -100px;
+}
+ 
+}
+
+ 
