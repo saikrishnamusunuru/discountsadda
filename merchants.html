@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/efd71d3ed7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom stylesheet -->
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Discount Adda</title>
+  </head>
+<style>
+
+
+@media (max-width: 576px) {
+  
+ 
+  .red-strip {
+   
+    width: 290px;
+
+     
+ 
+  }}
+
+
+
+  @media (min-width:577px) and (max-width:768px){
+   .red-strip {
+    
+    width: 290px;
+
+   
+  }
+
+
+}
+
+
+
+
+  @media (min-width:767px) and (max-width:992px){
+  .red-strip {
+  width: 300px;
+     
+ 
+  }}
+
+  @media (min-width:992px) and (max-width:1200px){
+  .red-strip {
+  width: 420px;
+     
+ 
+  }}
+
+  @media (min-width:1201px) and (max-width:2560px){
+  .red-strip {
+  width: 600px;
+     
+ 
+  }}
+   
+
+</style>
+  <body>
+    <!-- go to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+    <!-- Navbar starts -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./img/Discount Adda - Logo.png"
+            alt=""
+            width="70"
+            height="70"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/merchants.html">Merchant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+    <!-- Carousel -->
+
+    <div
+      id="main-carousel"
+      class="carousel slide main-carousel"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#main-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#main-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#main-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://image.shutterstock.com/image-vector/biggest-sale-offers-discount-banner-260nw-524159884.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://image.freepik.com/free-vector/flash-sale-discount-banner-template-promotion_8499-877.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://heysujal.github.io/TechKart/top-deals/deal1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#main-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#main-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel ends -->
+
+    <!-- Black Strip -->
+
+    <div id="blackstrip">
+      <h3>More you spend, More you Save !</h3>
+      <p>
+        If you spend <span>₹ 10,000.00</span> &nbsp, you will save
+        <span style="color: #0ee79f">₹ 5,000.00</span> in a year.
+      </p>
+    </div>
+
+    <div id="benefits">
+      <div class="red-strip">Benefits for Merchants</div>
+
+      <div class="features">
+        <div class="benefit-list">
+          <ul>
+            <li>
+              <span>
+                Merchants can provide discounts and offers on the daily
+                essentials and variety of things.
+              </span>
+            </li>
+
+            <li>
+              <span>
+             Now no need to distribute the pamplets, promote the shop physically or give any avertisements for user engagement.</span
+              >
+            </li>
+
+            <li>
+              <span>
+               With such exciting offers on daily needs and showing the amount saved by user on every purchase, has tremendously increased their sales.
+              </span>
+            </li>
+            <li>
+              <span>
+             Social Feeds for user, helps the merchant to promote the shop in its locality with no efforts & zero investment for promotion.
+              </span>
+            </li>
+            <li>
+              <span>
+                Great opportunity for the small scale shops to grow.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sign-up-form">
+          <form action="/">
+            <h1 style="text-align: center; margin-bottom: 30px">Sign Up</h1>
+
+            <div class="choice">
+              <label for="merchant"
+                ><input type="radio" name="radiobutton" checked />
+                MERCHANT</label
+              >
+
+              <label for="merchant">
+                <input type="radio" name="radiobutton" /> USER</label
+              >
+            </div>
+
+            <hr />
+
+            <div class="details">
+              <div>
+                <label for="name">Name: </label>
+                <input type="text" placeholder="Enter you name here" />
+              </div>
+
+              <div>
+                <label for="name">Email: </label>
+                <input type="text" placeholder="Enter you mail id here" />
+              </div>
+              <div>
+                <label for="name">Phone : </label>
+                <input type="tel" placeholder="Enter you phone_no here" />
+              </div>
+
+              <button type="button" class="btn btn-danger btn-lg">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Preview of app -->
+
+    <div class="preview container-fluid">
+      <h1>Preview of Merchant App</h1>
+
+      <div class="preview-img">
+        <div><img src="./img/merchant/merchant_home.png" alt="" /></div>
+        <div><img src="./img/merchant/QR_code _1.png" alt="" /></div>
+        <div><img src="./img/merchant/ReportsScreen.png" alt="" /></div>
+        <div><img src="./img/merchant/Mystore.png" alt="" /></div>
+      </div>
+
+      <div class="download-btn">
+        <h1>Get exciting offers on a wide range !!</h1>
+
+        <a href=""
+          ><button type="button" class="btn btn-danger btn-lg">
+            <i class="fab fa-google-play fa-2x"></i>
+            <div>
+              Download on <br />
+              <span>Google Play</span>
+            </div>
+          </button></a
+        >
+        <a href=""
+          ><button type="button" class="btn btn-danger btn-lg">
+            <i class="fab fa-apple fa-2x"></i>
+            <div>
+              Download on the <br />
+              <span>App Store</span>
+            </div>
+          </button></a
+        >
+      </div>
+    </div>
+
+    <!-- Our Merchants Carousel -->
+
+    <!-- Carousel -->
+    <section id="our-merchants">
+      <h1 style="text-align: center">Our Merchants</h1>
+      <div
+        id="merchant-carousel"
+        class="carousel slide merchant-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#merchant-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#merchant-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#merchant-carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://image.shutterstock.com/image-vector/biggest-sale-offers-discount-banner-260nw-524159884.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://image.freepik.com/free-vector/flash-sale-discount-banner-template-promotion_8499-877.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://heysujal.github.io/TechKart/top-deals/deal1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#merchant-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#merchant-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Carousel ends -->
+
+    <!-- footer -->
+
+    <footer
+      id="end"
+      style="background-color: #2e3644; margin-top: 100px; color: white"
+    >
+      <div class="footer">
+        <div class="footer-goal">
+          <h5>About Us</h5>
+          <a>
+            Discount Adda is a platform used to provide exciting offers and
+            discounts to the users based on their current location. The purpose
+            is to help out all the small shops to grow their business.
+          </a>
+        </div>
+        <div class="footer-our-products">
+          <h5>Solutions</h5>
+
+          <a href="#">For Merchants <i class="fas fa-chevron-down"></i></a>
+          <a href="#">For Shoppers <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="policy">
+          <h5>Policies</h5>
+
+          <a href="./terms and conditions.html"
+            >Terms & Conditions <i class="fas fa-chevron-down"></i
+          ></a>
+          <a href="#">Privacy policy <i class="fas fa-chevron-down"></i></a>
+          <a href="#">Card Usage Policy <i class="fas fa-chevron-down"></i></a>
+          <a href="datapolicy.html"
+            >Data Deletion Policy <i class="fas fa-chevron-down"></i
+          ></a>
+          <a href="#"
+            >Refund & Return Policy <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+        <div class="footer-contact-us">
+          <h5>Contact Us</h5>
+
+          <!-- Contact details -->
+          <div class="contact-us">
+            <div>
+              <a href="tel:+917345236412">Phone no: +91 - 7345236412</a>
+            </div>
+
+            <div>
+              <a href="mailto:discount@adda.in"
+                >Email_id: &nbsp discount@adda.in</a
+              >
+            </div>
+
+            <div class="social-icons">
+              <a href=""> <i class="fab fa-facebook fa-2x"></i></a>
+
+              <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="address">
+          Address- 183 sharad niwas, old nagar near Nakul patil bungalow,
+          sec-12, andra - 42012
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    >
+
+      //   jQuery(document).ready(function(){
+      // 	$('#main-carousel').carousel();
+      // 	$('#merchant-carousel').carousel();
+      // })
+    </script>
+
+    <script src="./js/index.js">
+      // manually binding the carousel
+    </script>
+  </body>
+</html>

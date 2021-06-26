@@ -82,20 +82,20 @@ padding:10px 100px 10px 100px;
 }
 
 .preview::before {    
-      content: "";
-      background-image: url('../img/discount\ adda\ bg.png');
-      background-size: cover;
-      position: absolute;
+      /* content: ""; */
+      /* background-image: url('../img/discount\ adda\ bg.png'); */
+      /* background-size: cover; */
+      /* position: absolute; */
       /* position: fixed; */
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.25;
-      z-index: -1;
-      -webkit-transform: translate3d(0,0,0);
-        background-size: cover;
-  background-position-y: -100px;
+      /* top: 0px; */
+      /* right: 0px; */
+      /* bottom: 0px; */
+      /* left: 0px; */
+      /* opacity: 0.25; */
+      /* z-index: -1; */
+      /* -webkit-transform: translate3d(0,0,0); */
+        /* background-size: cover; */
+  /* background-position-y: -100px; */
 }
 .preview{
  position: relative;

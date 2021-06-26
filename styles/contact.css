@@ -1,0 +1,180 @@
+#blackstrip {
+  margin-bottom: 0;
+}
+#contact {
+  background-color: whitesmoke;
+  padding: 50px 50px;
+}
+.hero {
+  background-color: white;
+
+  display: flex;
+  width: 90%;
+  padding-left: 50px;
+  padding-right: 0px;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.message-form {
+  padding-top: 30px;
+
+  padding-bottom: 40px;
+}
+.message-form h2 {
+  margin-bottom: 60px;
+}
+ 
+.field-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message-form label {
+  width: 70px;
+  margin-right: 20px;
+}
+.message-form input {
+  outline: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+  border: 1px solid rgb(216, 215, 215);
+}
+
+.message-form textarea {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 215, 215);
+  height: 10em;
+  width: 40em;
+  vertical-align: top !important;
+}
+
+.message-form button {
+  padding: 20px 80px;
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+  background-color: firebrick;
+}
+.contact-info {
+  background-color: firebrick;
+  color: white;
+  padding: 40px 20px 60px 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.contact-info h4 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.contact-info img {
+  margin-bottom: 60px;
+}
+/* Laptop specific */
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+  #contact {
+    padding: 50px 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .contact-info {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .message-form {
+    padding-left: 10px;
+  }
+
+  .field-input {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+  }
+
+  .message-form button {
+    padding: 20px 80px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background-color: firebrick;
+  }
+
+  .message-form textarea {
+    height: 10em;
+    width: 16em;
+    vertical-align: top !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+ #contact {
+    padding: 50px 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .contact-info {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .message-form {
+    padding-left: 10px;
+  }
+
+  .field-input {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+  }
+
+  .message-form button {
+    padding: 20px 80px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background-color: firebrick;
+  }
+
+  .message-form textarea {
+    height: 10em;
+    width: 16em;
+    vertical-align: top !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 2560px) {
+}

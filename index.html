@@ -33,7 +33,12 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Discount Adda</title>
   </head>
+
+   
   <body>
+
+    <!-- go to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
     <!-- Navbar starts -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -60,19 +65,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="/about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Merchant</a>
+              <a class="nav-link" href="/merchants.html">Merchant</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Users</a>
+              <a class="nav-link" href="/index.html">Users</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="/contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -219,9 +224,9 @@
 
 
 <div class="choice">
-<label   for="merchant"><input type="radio"> MERCHANT</label>
+<label   for="merchant"><input type="radio" name="radiobutton"> MERCHANT</label>
 
-<label for="merchant"> <input type="radio"> USER</label>
+<label for="merchant"> <input type="radio" name="radiobutton" checked> USER</label>
 
 </div>
 
@@ -232,19 +237,19 @@
 <div>
 
 <label for="name">Name: </label>
-<input type="text" size="18" placeholder="Enter you name here">
+<input type="text" placeholder="Enter you name here">
 
 </div>
 
 
 <div>
 <label for="name">Email: </label>
-<input type="text" size="18" placeholder="Enter you mail id here">
+<input type="text" placeholder="Enter you mail id here">
 
 </div>
  <div>
 <label for="name">Phone : </label>
-<input type="tel" size="18" placeholder="Enter you phone_no here">
+<input type="tel" placeholder="Enter you phone_no here">
 
  </div>
 
@@ -432,6 +437,14 @@
                 >Email_id: &nbsp discount@adda.in</a
               >
             </div>
+
+            <div class="social-icons">
+
+              <a href="">    <i class="fab fa-facebook fa-2x"></i></a> 
+               
+              <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+           
+            </div>
           </div>
         </div>
         <div class="address">
@@ -459,7 +472,7 @@ Address- 183 sharad niwas, old nagar near Nakul patil bungalow, sec-12, andra - 
   
   </script>
 
-    <script>
+    <script src="./js/index.js">
   // manually binding the carousel
 
 
