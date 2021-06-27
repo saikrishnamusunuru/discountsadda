@@ -19,3 +19,35 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+ 
+// disable right click
+
+window.addEventListener('contextmenu',()=> event.preventDefault());
+
+//logic for amount calculation
+initialAmt = document.querySelector("input[name='initial-amt']")
+finalAmt  = document.querySelector("input[name='final-amt']")
+ initialAmt.addEventListener('keyup', ()=>{
+
+  var init_amt  =  initialAmt.value;
+ 
+ 
+
+  if(init_amt!=""){
+
+     
+    finalAmt.value =   ((0.1*init_amt).toFixed(2)).toLocaleString();
+
+  }
+
+  else{
+    finalAmt.value =  ""
+  }
+ 
+
+
+ });
+ 
+
+
+ 
