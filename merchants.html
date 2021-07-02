@@ -238,9 +238,9 @@
 
 
 <div class="choice">
-<label   for="merchant"><input type="radio" name="radiobutton" checked> MERCHANT</label>
+<label   for="merchant"><input type="radio" name="radiobutton"  id="merchant-radio"  checked> MERCHANT</label>
 
-<label for="merchant"> <input type="radio" name="radiobutton" > USER</label>
+<label for="merchant"> <input type="radio" name="radiobutton" id="user-radio" > USER</label>
 
 </div>
 
@@ -470,15 +470,69 @@ Address: Vijayawada Andhra Pradesh
     </script>
 
 
-<script>
-
-  const serverlessForm = document.forms["serverless-form"];
+  <script>
+      const serverlessForm = document.forms["serverless-form"];
 
       serverlessForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let name = document.getElementById("name");
         let email = document.getElementById("email");
         let phone = document.getElementById("phone");
+        let userRadio = document.querySelector("#user-radio");
+        let merchantRadio = document.querySelector("#merchant-radio");
+
+
+        if(userRadio.checked){
+
+
+  fetch(
+          "https://docs.google.com/forms/u/0/d/e/1FAIpQLScEajtZdkqzAleZY5qYOi5wMLzTnQF1U5HjV3YM_qGLNtOCmA/formResponse",
+          {
+            headers: {
+              accept:
+                "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+              "accept-language":
+                "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6",
+              "cache-control": "max-age=0",
+              "content-type": "application/x-www-form-urlencoded",
+              "sec-ch-ua":
+                '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
+              "sec-ch-ua-mobile": "?0",
+              "sec-fetch-dest": "document",
+              "sec-fetch-mode": "navigate",
+              "sec-fetch-site": "same-origin",
+              "sec-fetch-user": "?1",
+              "upgrade-insecure-requests": "1",
+              "x-chrome-connected":
+                "source=Chrome,id=105190256095986053277,mode=0,enable_account_consistency=false,supervised=false,consistency_enabled_by_default=false",
+              "x-client-data":
+                "CIq2yQEIo7bJAQjEtskBCIqSygEIqZ3KAQiU38oBCNCaywEIoKDLAQis8ssBCN3yywEIj/jLAQi0+MsBCOX4ywEInvnLARiOnssBGLryywE=",
+            },
+            referrer:
+              "https://docs.google.com/forms/d/e/1FAIpQLScEajtZdkqzAleZY5qYOi5wMLzTnQF1U5HjV3YM_qGLNtOCmA/viewform?fbzx=4632167912289329999",
+            referrerPolicy: "strict-origin-when-cross-origin",
+            body: `entry.2029040640=${name.value}&entry.136985185=${email.value}&entry.816561237=${phone.value}&fvv=1&draftResponse=%5Bnull%2Cnull%2C%224632167912289329999%22%5D%0D%0A&pageHistory=0&fbzx=4632167912289329999`,
+            method: "POST",
+            mode: "no-cors",
+            credentials: "include",
+          }
+        )
+          .then((res) => {
+            name.value = "";
+            email.value = "";
+            phone.value = "";
+            alert("Data submitted successfully");
+          })
+          .catch((err) => {
+            console.error(err);
+            alert("Something went wrong")
+          });
+
+        }
+
+        else if(merchantRadio.checked){
+
+
 
         fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfaAJ2qm0dChsfVpXHB5GGuIYkpCwmQ0ivMCfqW4_QrMpsQgA/formResponse", {
   "headers": {
@@ -513,10 +567,10 @@ Address: Vijayawada Andhra Pradesh
             console.error(err);
             alert("Something went wrong")
           });
+
+        }
+      
       });
-
-
-
-</script>
+    </script>
   </body>
 </html>
