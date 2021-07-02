@@ -7,7 +7,7 @@
 
 
 <!-- favicon -->
-<link rel="icon" href="./img/favicon.png">
+<link rel="icon" href="./img/favicon.png" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -34,14 +34,13 @@
     <title>Discount Adda</title>
   </head>
 
-   
   <body>
-
+    
     <!-- go to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
     <!-- Navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="./index.html">
           <img
@@ -85,7 +84,7 @@
     </nav>
     <!-- Navbar ends -->
     <!-- Carousel -->
- 
+
     <div
       id="main-carousel"
       class="carousel slide main-carousel"
@@ -106,34 +105,17 @@
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#main-carousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="https://image.shutterstock.com/image-vector/biggest-sale-offers-discount-banner-260nw-524159884.jpg"
+            src="./img/da banner one v2.jpg"
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item">
-          <img
-            src="https://image.freepik.com/free-vector/flash-sale-discount-banner-template-promotion_8499-877.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://heysujal.github.io/TechKart/top-deals/deal1.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="./img/da banner two.jpg" class="d-block w-100" alt="..." />
         </div>
       </div>
       <button
@@ -158,234 +140,234 @@
     <!-- Carousel ends -->
 
     <!-- Black Strip -->
- 
+
     <div id="blackstrip">
       <h3>More you spend, More you Save !</h3>
       <p>
-        If you spend <span>₹<input type="text" name="initial-amt" id="initial-amt" placeholder="10,000.00"></span> , you will save <span style="color: #0ee79f">₹<input type="text" name="final-amt" id="final-amt" readonly placeholder="1,000.00"></span> in a year.
+        If you spend
+        <span
+          >₹<input
+            type="text"
+            name="initial-amt"
+            id="initial-amt"
+            placeholder="10,000.00"
+        /></span>
+        , you will save
+        <span style="color: #0ee79f"
+          >₹<input
+            type="text"
+            name="final-amt"
+            id="final-amt"
+            readonly
+            placeholder="1,000.00"
+        /></span>
+        in a year.
       </p>
     </div>
 
-
-
-
     <div id="benefits">
+      <div class="red-strip">Benefits for Users</div>
 
-      <div class="red-strip">
-        Benefits for Users
+      <div class="features">
+        <div class="benefit-list">
+          <ul>
+            <li>
+              <span
+                >Users can get discounts and offers on the daily essentials and
+                variety of things.</span
+              >
+            </li>
 
+            <li>
+              <span>
+                Now no need to visit all the shops to check out the discount %,
+                with this app you can checkout which shop provides maximum
+                discounts that saves a lot of time.</span
+              >
+            </li>
+
+            <li>
+              <span>
+                Along with the discount %, user also gets to know the amount he
+                saved on each purchase he/she made.
+              </span>
+            </li>
+            <li>
+              <span>
+                Social Feeds for user to get to know the amount saved the people
+                from the shops near you
+              </span>
+            </li>
+            <li>
+              <span>
+                Users can view the entire shop details through the User app
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sign-up-form">
+          
+          <form id="contactForm" name="serverless-form" action="" method="POST">
+            <h1 style="text-align: center; margin-bottom: 30px">Sign Up</h1>
+
+            <div class="choice">
+              <label for="merchant"
+                ><input type="radio" name="radiobutton" /> MERCHANT</label
+              >
+
+              <label for="merchant">
+                <input type="radio" name="radiobutton" checked /> USER</label
+              >
+            </div>
+
+            <hr />
+
+            <div class="details">
+              <fieldset class="border px-3 pb-1">
+                <legend class="w-auto">Name</legend>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="name"
+                  name="name"
+                   
+                />
+              </fieldset>
+
+              <fieldset class="border px-3 pb-1">
+                <legend class="w-auto">E-mail ID</legend>
+                <input
+                  type="email"
+                  placeholder="example@gmail.com"
+                  id="email"
+                  name="email"
+                   
+                />
+              </fieldset>
+
+              <fieldset class="border px-3 pb-1">
+                <legend class="w-auto">Mobile No.</legend>
+                <input
+                  type="tel"
+                  placeholder="9333-333-4444"
+                  id="phone"
+                  name="phone"
+                   
+                />
+              </fieldset>
+
+              <button type="submit" class="btn btn-danger btn-lg">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-
-
-    <div class="features">
-
-<div class="benefit-list">
-
- <ul>
-   <li> <span>Users can get discounts and offers on the daily essentials and variety of things.</span> </li>
-  
-   <li>
-<span>     Now no need to visit all the shops to check out the discount %, with this app you can checkout which shop provides maximum discounts that saves a lot of time.</span>
-     
-
-   </li>
-
-   <li>
-    <span>
-
-       Along with the discount %, user also gets to know the amount he saved on each purchase he/she made.
-    </span>
-   </li>
- <li>
-   <span>
-
-    Social Feeds for user to get to know the amount saved the people from the shops near you
-   </span>
- </li>
- <li>
-
-  <span>
-
-    Users can view the entire shop details through the User app
-  </span>
- </li>
-  </ul>
-
-</div>
-
-<div class="sign-up-form">
-
-  
-  <form action="/">
-  
-<h1 style="text-align: center;margin-bottom: 30px;">Sign Up</h1>
-
-
-
-<div class="choice">
-<label   for="merchant"><input type="radio" name="radiobutton"> MERCHANT</label>
-
-<label for="merchant"> <input type="radio" name="radiobutton" checked> USER</label>
-
-</div>
-
-<hr>
-
-<div class="details">
-
-<div>
-
-<label for="name">Name: </label>
-<input type="text" placeholder="Enter you name here">
-
-</div>
-
-
-<div>
-<label for="name">Email: </label>
-<input type="text" placeholder="Enter you mail id here">
-
-</div>
- <div>
-<label for="name">Phone : </label>
-<input type="tel" placeholder="Enter you phone_no here">
-
- </div>
-
-
-  <button type="button" class="btn btn-danger btn-lg">Sign Up</button>
-</div>
-
-
-  </form>
-
-</div>
-
     </div>
-
-
-    </div>
-
-
 
     <!-- Preview of app -->
 
     <div class="preview container-fluid">
-
-
       <h1>Preview of User App</h1>
 
       <div class="preview-img">
-
-        <div> <img src="./img/user/Home.png" alt=""></div>
-        <div> <img src="./img/user/social_feeds_1.png" alt=""></div>
-        <div>   <img src="./img/user/subcategory.png" alt=""></div>
-        <div> <img src="./img/user/Merchant_overview.png" alt=""></div>
-        
-      
-      
-      
-    
-
-
+        <div><img src="./img/user/Home.png" alt="" /></div>
+        <div><img src="./img/user/social_feeds_1.png" alt="" /></div>
+        <div><img src="./img/user/subcategory.png" alt="" /></div>
+        <div><img src="./img/user/Merchant_overview.png" alt="" /></div>
       </div>
 
       <div class="download-btn">
+        <h1>Get exciting offers on a wide range !!</h1>
 
- <h1>Get exciting offers on a wide range !!</h1>
-
-      
-     <a href=""><button type="button" class="btn btn-danger btn-lg">  <i class="fab fa-google-play fa-2x"></i>  <div>Download on <br> <span>Google Play</span></div>  </button></a> 
-   <a href=""><button type="button" class="btn btn-danger btn-lg"><i class="fab fa-apple fa-2x"></i> <div>Download on the <br> <span>App Store</span></div>  </button></a>   
-
+        <a href=""
+          ><button type="button" class="btn btn-danger btn-lg">
+            <i class="fab fa-google-play fa-2x"></i>
+            <div>
+              Download on <br />
+              <span>Google Play</span>
+            </div>
+          </button></a
+        >
+        <a href=""
+          ><button type="button" class="btn btn-danger btn-lg">
+            <i class="fab fa-apple fa-2x"></i>
+            <div>
+              Download on the <br />
+              <span>App Store</span>
+            </div>
+          </button></a
+        >
       </div>
-     
     </div>
 
-
-
-<!-- Our Merchants Carousel -->
+    <!-- Our Merchants Carousel -->
 
     <!-- Carousel -->
- <section id="our-merchants">
+    <section id="our-merchants">
+      <h1 style="text-align: center">Our Merchants</h1>
+      <div
+        id="merchant-carousel"
+        class="carousel slide merchant-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#merchant-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#merchant-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/da banner one v2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/da banner two.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#merchant-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#merchant-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-    <h1 style="text-align: center;">Our Merchants</h1>
-     <div
-      id="merchant-carousel"
-      class="carousel slide merchant-carousel"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#merchant-carousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#merchant-carousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#merchant-carousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://image.shutterstock.com/image-vector/biggest-sale-offers-discount-banner-260nw-524159884.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://image.freepik.com/free-vector/flash-sale-discount-banner-template-promotion_8499-877.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://heysujal.github.io/TechKart/top-deals/deal1.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#merchant-carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#merchant-carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
- </section>
-   
     <!-- Carousel ends -->
 
-
-<!-- footer -->
-
+    <!-- footer -->
 
     <footer
       id="end"
@@ -393,31 +375,30 @@
     >
       <div class="footer">
         <div class="footer-goal">
-       
-             
-<h5>About Us</h5>
-            <a>
-              Discount Adda is a platform used to provide exciting offers
-              and discounts to the users based on their current location. The purpose is to help out all the small shops to grow their business.
-            </a>
-      
-
-           
+          <h5>About Us</h5>
+          <a>
+            Discount Adda is a platform used to provide exciting offers and
+            discounts to the users based on their current location. The purpose
+            is to help out all the small shops to grow their business.
+          </a>
         </div>
         <div class="footer-our-products">
           <h5>Solutions</h5>
 
-           
           <a href="#">For Merchants <i class="fas fa-chevron-down"></i></a>
           <a href="#">For Shoppers <i class="fas fa-chevron-down"></i></a>
         </div>
         <div class="policy">
           <h5>Policies</h5>
 
-          <a href="./terms and conditions.html">Terms & Conditions <i class="fas fa-chevron-down"></i></a>
+          <a href="./terms and conditions.html"
+            >Terms & Conditions <i class="fas fa-chevron-down"></i
+          ></a>
           <a href="#">Privacy policy <i class="fas fa-chevron-down"></i></a>
           <a href="#">Card Usage Policy <i class="fas fa-chevron-down"></i></a>
-          <a href="datapolicy.html">Data Deletion Policy <i class="fas fa-chevron-down"></i></a>
+          <a href="datapolicy.html"
+            >Data Deletion Policy <i class="fas fa-chevron-down"></i
+          ></a>
           <a href="#"
             >Refund & Return Policy <i class="fas fa-chevron-down"></i>
           </a>
@@ -425,7 +406,8 @@
         <div class="footer-contact-us">
           <h5>Contact Us</h5>
 
-         <div class="contact-us">
+          <!-- Contact details -->
+          <div class="contact-us">
             <div>
               <a href="tel:+9177803 68566">Phone no: +91 - 77803 68566</a>
             </div>
@@ -437,44 +419,87 @@
             </div>
 
             <div class="social-icons">
+              <a href="https://www.facebook.com/Discountsadda-114888170698301">
+                <i class="fab fa-facebook fa-2x"></i
+              ></a>
 
-              <a href="https://www.facebook.com/Discountsadda-114888170698301">    <i class="fab fa-facebook fa-2x"></i></a> 
-               
-              <a href="https://twitter.com/discountsadda"><i class="fab fa-twitter fa-2x"></i></a>
-              <a href="https://www.youtube.com/channel/UCjvkGKlY_g5VaEFhS1gkEWQ"><i class="fab fa-youtube fa-2x"></i></a>
-              <a href="https://www.instagram.com/discountsaddaofficial"><i class="fab fa-instagram fa-2x"></i></a>
-           
+              <a href="https://twitter.com/discountsadda"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCjvkGKlY_g5VaEFhS1gkEWQ"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+              <a href="https://www.instagram.com/discountsaddaofficial"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
             </div>
           </div>
         </div>
-        <div class="address">
-Address: Vijayawada Andhra Pradesh
-
-
+        <div class="address">Address: Vijayawada Andhra Pradesh</div>
       </div>
-      </div>
-
-
-      
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
-    >
-  
-//   jQuery(document).ready(function(){
-// 	$('#main-carousel').carousel();
-// 	$('#merchant-carousel').carousel();
-// })
-  
-  
-  </script>
+    ></script>
 
     <script src="./js/index.js">
-  // manually binding the carousel
+      // manually binding the carousel
+    </script>
 
+    <script>
+      const serverlessForm = document.forms["serverless-form"];
 
+      serverlessForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let phone = document.getElementById("phone");
+
+        fetch(
+          "https://docs.google.com/forms/u/0/d/e/1FAIpQLScEajtZdkqzAleZY5qYOi5wMLzTnQF1U5HjV3YM_qGLNtOCmA/formResponse",
+          {
+            headers: {
+              accept:
+                "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+              "accept-language":
+                "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6",
+              "cache-control": "max-age=0",
+              "content-type": "application/x-www-form-urlencoded",
+              "sec-ch-ua":
+                '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
+              "sec-ch-ua-mobile": "?0",
+              "sec-fetch-dest": "document",
+              "sec-fetch-mode": "navigate",
+              "sec-fetch-site": "same-origin",
+              "sec-fetch-user": "?1",
+              "upgrade-insecure-requests": "1",
+              "x-chrome-connected":
+                "source=Chrome,id=105190256095986053277,mode=0,enable_account_consistency=false,supervised=false,consistency_enabled_by_default=false",
+              "x-client-data":
+                "CIq2yQEIo7bJAQjEtskBCIqSygEIqZ3KAQiU38oBCNCaywEIoKDLAQis8ssBCN3yywEIj/jLAQi0+MsBCOX4ywEInvnLARiOnssBGLryywE=",
+            },
+            referrer:
+              "https://docs.google.com/forms/d/e/1FAIpQLScEajtZdkqzAleZY5qYOi5wMLzTnQF1U5HjV3YM_qGLNtOCmA/viewform?fbzx=4632167912289329999",
+            referrerPolicy: "strict-origin-when-cross-origin",
+            body: `entry.2029040640=${name.value}&entry.136985185=${email.value}&entry.816561237=${phone.value}&fvv=1&draftResponse=%5Bnull%2Cnull%2C%224632167912289329999%22%5D%0D%0A&pageHistory=0&fbzx=4632167912289329999`,
+            method: "POST",
+            mode: "no-cors",
+            credentials: "include",
+          }
+        )
+          .then((res) => {
+            name.value = "";
+            email.value = "";
+            phone.value = "";
+            alert("Data submitted successfully");
+          })
+          .catch((err) => {
+            console.error(err);
+            alert("Something went wrong")
+          });
+      });
     </script>
   </body>
 </html>

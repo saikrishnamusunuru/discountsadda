@@ -1,3 +1,29 @@
+// Navbar color change on scroll
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50 && window.screen.width >= 992) {
+      document.getElementById("navbar_top").classList.add("fixed-top");
+      // add padding top to show content behind navbar
+      navbar_height = document.querySelector(".navbar").offsetHeight;
+       
+      document.body.style.paddingTop = navbar_height + "px";
+
+      // adding background color to navbar
+
+      document.getElementById("navbar_top").classList.add("bg-white");
+      // document.getElementById('navbar_top').classList.add('navbar-light');
+    } else {
+      document.getElementById("navbar_top").classList.remove("fixed-top");
+      // remove padding top from body
+
+      // remove bg color from navbar
+      document.getElementById("navbar_top").classList.remove("bg-white");
+      // document.getElementById('navbar_top').classList.remove('navbar-light');
+      document.body.style.paddingTop = "0";
+    }
+  });
+});
+
 //Go to top button
 var mybutton = document.getElementById("myBtn");
 
@@ -19,35 +45,20 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
- 
+
 // disable right click
 
-window.addEventListener('contextmenu',()=> event.preventDefault());
+window.addEventListener("contextmenu", (event) => event.preventDefault());
 
 //logic for amount calculation
-initialAmt = document.querySelector("input[name='initial-amt']")
-finalAmt  = document.querySelector("input[name='final-amt']")
- initialAmt.addEventListener('keyup', ()=>{
+initialAmt = document.querySelector("input[name='initial-amt']");
+finalAmt = document.querySelector("input[name='final-amt']");
+initialAmt.addEventListener("keyup", () => {
+  var init_amt = initialAmt.value;
 
-  var init_amt  =  initialAmt.value;
- 
- 
-
-  if(init_amt!=""){
-
-     
-    finalAmt.value =   ((0.1*init_amt).toFixed(2)).toLocaleString();
-
+  if (init_amt != "") {
+    finalAmt.value = (0.1 * init_amt).toFixed(2).toLocaleString();
+  } else {
+    finalAmt.value = "";
   }
-
-  else{
-    finalAmt.value =  ""
-  }
- 
-
-
- });
- 
-
-
- 
+});
