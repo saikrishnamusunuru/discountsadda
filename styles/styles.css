@@ -32,11 +32,7 @@ body {
 }
 
  
-
-
-.navbar-brand {
-  margin-right: 10rem;
-}
+ 
 
 .nav-item {
   margin-right: 20px;
@@ -70,7 +66,7 @@ body {
 #blackstrip span {
   border: 1px solid #fff1f1;
   border-radius: 3px;
-  padding: 3px 1px;
+  
   font-weight: 400;
 }
 
@@ -315,21 +311,29 @@ input[type=number] {
 
 /* Media Queries */
 @media (max-width: 576px) {
-   
+    #join-now{
+    width: 50%;
+    padding: 10px 10px;
+  }
   #blackstrip {
-     
+     text-align: center;
     padding: 30px 20px;
   
   }
+   
 #blackstrip p{
     line-height:2.4;
+    /* word-break: break-all; */
 }
   #blackstrip p span {
     padding: 10px 10px;
     padding-right: 0px;
+    white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
   }
 #initial-amt, #final-amt{
-  width: 125px !important;
+  width: 122px !important;
 }
   .red-strip {
     height: 40px;
@@ -375,10 +379,20 @@ input[type=number] {
 
 
 @media (min-width: 577px) and (max-width: 768px) {
- #blackstrip span {
-    padding: 10px 5px;
+   #join-now{
+    width: 40%;
   }
-  
+ #blackstrip span {
+    
+
+      display: inline-block;
+    vertical-align: top;
+    padding: 0.1rem;  
+    margin: 0 5px 5px 0;    
+  }
+    #initial-amt, #final-amt{
+  width: 125px !important;
+}
 
 
   /* feature list */
@@ -401,12 +415,18 @@ input[type=number] {
 }
 
 @media (min-width: 767px) and (max-width: 992px) {
+  #join-now{
+    width: 40%;
+  }
   .features {
     flex-direction: row;
   }
   #blackstrip span {
     padding: 10px 5px;
   }
+    #initial-amt, #final-amt{
+  width: 125px !important;
+}
   .red-strip {
     height: 40px;
     width: 260px;
@@ -437,6 +457,15 @@ input[type=number] {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+nav{
+  position: relative;
+}
+ 
+.navbar-nav{
+position: absolute;
+right: 20px;
+}
+
 
     #navbar_top {
     height: 80px;
@@ -453,8 +482,11 @@ input[type=number] {
 
   #blackstrip span {
     padding: 10px 5px;
+     
   }
-
+  #initial-amt, #final-amt{
+  width: 125px !important;
+}
   /* redstrip */
   .red-strip {
     background-color: #d02824;
@@ -514,7 +546,14 @@ input[type=number] {
 /* for bigger screens */
 @media (min-width: 1201px) and (max-width: 2560px) {
 
-
+nav{
+  position: relative;
+}
+ 
+.navbar-nav{
+position: absolute;
+right: 20px;
+}
    #navbar_top {
     height: 80px;
   }
